@@ -1,214 +1,515 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인프라 테크 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #0f172a;
-      --accent-color: #2563eb;
-      --muted-color: #64748b;
-      --border-color: #e2e8f0;
-      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 검색 최적화 비용 및 전략적 컨설팅 | Expert SEO Agency</title>
+    <meta name="description" content="여의도 검색 최적화 비용의 투명한 기준과 데이터 기반의 성과 전략을 제공합니다. 상위 노출을 위한 기술적 SEO, 콘텐츠 최적화, 백링크 구축 솔루션을 확인하십시오.">
+    <meta name="keywords" content="여의도 검색 최적화 비용, 여의도 SEO, 검색 엔진 마케팅, 웹사이트 최적화, 서울 금융권 SEO, 페이지 랭킹 전략">
+    <link rel="canonical" href="https://kr-pbn-bp-007.pages.dev/">
+    <meta name="robots" content="index, follow">
+    
+    <!-- BPAAS Design System Metadata -->
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="여의도 검색 최적화 비용 및 전략적 컨설팅">
+    <meta property="og:description" content="데이터 기반의 검색 엔진 최적화 솔루션. 투명한 비용 구조와 검증된 성과 전략을 경험하십시오.">
+    <meta property="og:url" content="https://kr-pbn-bp-007.pages.dev/">
+    <meta property="og:image" content="https://kr-pbn-bp-007.pages.dev/og-image-placeholder.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="여의도 검색 최적화 비용 및 전략적 컨설팅">
+    <meta name="twitter:description" content="데이터 기반의 검색 엔진 최적화 솔루션. 투명한 비용 구조와 검증된 성과 전략을 경험하십시오.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Expert SEO Agency Yeouido",
+      "image": "https://kr-pbn-bp-007.pages.dev/logo.png",
+      "telephone": "010-6279-0862",
+      "url": "https://kr-pbn-bp-007.pages.dev/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Yeouido-dong",
+        "addressRegion": "Seoul",
+        "addressCountry": "KR"
+      },
+      "priceRange": "$$$",
+      "description": "여의도 지역의 전문적인 검색 최적화 및 디지털 마케팅 컨설팅 제공.",
+      "areaServed": "Yeouido"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family: var(--font-swiss);
-      line-height: 1.8;
-      letter-spacing: -0.01em;
-      padding: 0 24px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 24px;
-      margin-bottom: 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-decoration: none;
-      color: var(--text-color);
-    }
-    nav { display: flex; gap: 20px; }
-    nav a {
-      color: var(--muted-color);
-      text-decoration: none;
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
-    nav a:hover { color: var(--accent-color); }
-    main { padding-bottom: 60px; }
-    .meta-tag {
-      font-size: 0.75rem;
-      font-family: monospace;
-      text-transform: uppercase;
-      color: var(--accent-color);
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 16px;
-      display: inline-block;
-    }
-    h1 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--text-color);
-      margin-bottom: 32px;
-    }
-    .content {
-      font-size: 1.05rem;
-      color: var(--text-color);
-      margin-bottom: 48px;
-      font-weight: 400;
-    }
-    .content p { margin-bottom: 20px; }
-    .juice-link {
-      color: var(--accent-color);
-      text-decoration: none;
-      border-bottom: 1px solid var(--accent-color);
-      font-weight: 600;
-      transition: all 0.2s ease;
-    }
-    .juice-link:hover {
-      background-color: rgba(37, 99, 235, 0.05);
-    }
-    .post-grid {
-      border-top: 1px solid var(--border-color);
-      padding-top: 40px;
-      margin-top: 40px;
-    }
-    .grid-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted-color);
-      margin-bottom: 24px;
-    }
-    .posts-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .post-card {
-      border: 1px solid var(--border-color);
-      padding: 24px;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text-color);
-      transition: all 0.2s ease;
-    }
-    .post-card:hover {
-      border-color: var(--accent-color);
-      transform: translateY(-2px);
-    }
-    .post-card h3 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .post-card p {
-      font-size: 0.9rem;
-      color: var(--muted-color);
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      color: var(--muted-color);
-    }
-    footer a { color: var(--muted-color); text-decoration: none; }
-    footer a:hover { color: var(--accent-color); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      h1 { font-size: 1.8rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        :root {
+            --primary: #111111;
+            --secondary: #ffffff;
+            --accent: #2563eb;
+            --gray-light: #f3f4f6;
+            --gray-medium: #e5e7eb;
+            --gray-dark: #6b7280;
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --space-unit: 16px;
+            --container-width: 960px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--secondary);
+            color: var(--primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--space-unit);
+        }
+
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-unit);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-unit);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 16px; }
+        h2 { font-size: 1.75rem; margin-bottom: 12px; }
+        h3 { font-size: 1.25rem; margin-bottom: 8px; }
+        p { font-size: 1rem; color: var(--gray-dark); margin-bottom: 16px; }
+
+        /* Header & Nav */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--gray-medium);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.03em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 2px;
+            border: 1px solid var(--primary);
+        }
+
+        .cta-button:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+            opacity: 1;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 20px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background-color: var(--gray-light);
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-visual {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #e5e7eb 0%, #f3f4f6 100%);
+            border: 1px solid var(--gray-medium);
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Cost Section */
+        .cost-card {
+            border: 1px solid var(--gray-medium);
+            padding: 24px;
+        }
+
+        .cost-card.highlight {
+            border-color: var(--primary);
+            background-color: #fafafa;
+        }
+
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: block;
+            margin: 12px 0;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: var(--gray-dark);
+        }
+
+        .feature-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            background-color: var(--primary);
+        }
+
+        /* Reviews */
+        .review-card {
+            border: 1px solid var(--gray-medium);
+            padding: 24px;
+            background: var(--secondary);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+            color: var(--gray-dark);
+        }
+
+        .stars {
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--secondary);
+                flex-direction: column;
+                padding: 24px;
+                border-bottom: 1px solid var(--gray-medium);
+                gap: 16px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            h1 { font-size: 2rem; }
+            .hero { padding: 40px 0; }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
+
+    <!-- Navigation -->
     <header>
-      <a href="/" class="logo">KR.GEEK</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="meta-tag">// SWISS ACCENTED GRID SYSTEM</div>
-      <h1>인프라 테크 지식 저널 및 아카이브</h1>
-      <div class="content">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인프라 테크</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="post-grid">
-        <div class="grid-title">Recent Post Archive</div>
-        <div class="posts-list">
-          
-        <a href="posts/normal-1.html" class="post-card">
-          <h3>메일 인프라 신뢰 확보를 위한 DMARC(Domain-based Message Authentication) 거부 정책 설정 시기</h3>
-          <p>새로 웜업을 진행하는 도메인의 수신율과 보안 도달 평판을 극대화하기 위해, SPF와 DKIM 인증 결과 기반의 DMARC 규약을 초기 단순 모니터링 수준에서 메일 수신 서버들이 미...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="post-card">
-          <h3>리눅스 클라우드 VPS(가상 서버) systemd-journald 메모리 힙 누수 및 로그 디스크 포화 제어 기법</h3>
-          <p>한정된 자원으로 초경량 고성능 웹 서버를 운영할 때, 실시간 커널 로그가 무제한 적재되어 디스크 공간 부족으로 전체 프로세스가 락되는 파멸적 재앙을 미연에 방지하기 위해 `/etc...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="post-card">
-          <h3>TCP 윈도우 스케일링(Window Scaling) 활성화 시 노후화된 게이트웨이 장비의 패킷 드롭 원인 추적</h3>
-          <p>원거리 대용량 데이터 전송 성능을 극대화하는 TCP 윈도우 스케일 팩터 옵션을 커널 수준에서 적용했을 때, 도중에 위치한 오래된 하드웨어 방화벽들이 이를 비정상 버스트 트래픽으로 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="post-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="post-card">
-          <h3>네트워크 인프라 엔지니어를 위한 SEO 오토파일럿 가격 트러블슈팅 기술 리포트</h3>
-          <p>표준 네트워크 통신 규약의 미세 튜닝과 메모리 힙 리소스를 정밀 제어하며 대량 서버 도달 평판의 균형점을 맞추어나가는 지적인 인프라 전문가분들이라면, 머리 아픈 커널 최적화 점검을...</p>
-        </a>
-      
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">SEO.YEIDO</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">전문성</a></li>
+                    <li><a href="#cost">비용 분석</a></li>
+                    <li><a href="#process">프로세스</a></li>
+                    <li><a href="#reviews">고객 리뷰</a></li>
+                    <li><a href="tel:01062790862" class="cta-button">무료 진단 받기</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-    </main>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>여의도 검색 최적화 비용의 새로운 기준</h1>
+                <p>데이터에 기반한 투명한 비용 구조와 검증된 알고리즘 전략으로 금융 및 비즈니스 중심지 여의도의 디지털 가시성을 극대화합니다.</p>
+                <div style="margin-top: 24px;">
+                    <a href="#cost" class="cta-button">비용 상세 보기</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- CSS Visual Representation -->
+                <div style="text-align: center;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <p style="margin-top: 16px; font-weight: 600; color: #111;">Data-Driven SEO Strategy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Intro -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2>전문가 기반의 검색 엔진 최적화</h2>
+                </div>
+                <div>
+                    <p>여의도 지역의 비즈니스 환경은 매우 경쟁적입니다. 단순히 키워드를 나열하는 방식은 더 이상 유효하지 않습니다. 우리는 기술적 SEO(Technical SEO), 콘텐츠 권위성(Content Authority), 그리고 사용자 경험(UX)을 종합적으로 분석하여 장기적인 랭킹 상승을 보장하는 솔루션을 제공합니다.</p>
+                    <p>본사는 <strong>여의도 검색 최적화 비용</strong>을 단순한 지출이 아닌, 측정 가능한 투자 (ROI) 로 정의합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Analysis Section -->
+    <section id="cost" class="section">
+        <div class="container">
+            <h2 style="margin-bottom: 32px;">투명한 비용 구조 및 패키지</h2>
+            <div class="grid-3">
+                <!-- Package 1 -->
+                <div class="cost-card">
+                    <h3>스타트업 패키지</h3>
+                    <p>초기 인지도 확보를 위한 기본 최적화</p>
+                    <span class="price-tag">₩1,500,000 / 월</span>
+                    <ul class="feature-list">
+                        <li>키워드 분석 (5 개)</li>
+                        <li>온페이지 최적화 (10 페이지)</li>
+                        <li>기술적 SEO 감사 (분기별)</li>
+                        <li>월간 성과 리포트</li>
+                    </ul>
+                </div>
+
+                <!-- Package 2 (Highlight) -->
+                <div class="cost-card highlight">
+                    <h3>그로스 패키지</h3>
+                    <p>여의도 지역 특화 경쟁력 강화</p>
+                    <span class="price-tag">₩3,000,000 / 월</span>
+                    <ul class="feature-list">
+                        <li>키워드 분석 (15 개)</li>
+                        <li>콘텐츠 전략 수립 및 작성 (주 2 회)</li>
+                        <li>백링크 구축 (도메인 권위 30+)</li>
+                        <li>로컬 SEO (구글 맵 최적화)</li>
+                        <li>주간 성과 리포트 및 미팅</li>
+                    </ul>
+                    <a href="tel:01062790862" style="display:block; margin-top: 16px; font-weight: 600; font-size: 0.9rem;">상담 신청하기 →</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="cost-card">
+                    <h3>엔터프라이즈</h3>
+                    <p>대규모 도메인 및 복수 키워드 장악</p>
+                    <span class="price-tag">문의 필요</span>
+                    <ul class="feature-list">
+                        <li>무제한 키워드 타겟팅</li>
+                        <li>전담 SEO 매니저 배정</li>
+                        <li>경쟁사 심층 분석 및 역공학</li>
+                        <li>커스텀 백링크 네트워크 구축</li>
+                        <li>실시간 모니터링 대시보드</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 24px; font-size: 0.85rem; color: var(--gray-dark);">* 위 비용은 부가세를 포함하지 않은 기준가이며, 도메인 현황 및 경쟁 강도에 따라 변동될 수 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section">
+        <div class="container">
+            <h2>검색 순위 상승 프로세스</h2>
+            <div class="grid-2" style="margin-top: 24px; gap: 40px;">
+                <div>
+                    <div style="margin-bottom: 24px;">
+                        <h3>01. 정밀 진단 (Audit)</h3>
+                        <p>사이트의 기술적 결함, 색인 문제, 현재 랭킹 상태를 분석하여 개선 포인트를 도출합니다.</p>
+                    </div>
+                    <div style="margin-bottom: 24px;">
+                        <h3>02. 전략 수립 (Strategy)</h3>
+                        <p>여의도 지역 타겟 키워드 및 검색 의도 (Search Intent) 를 분석하여 맞춤형 로드맵을 설계합니다.</p>
+                    </div>
+                    <div style="margin-bottom: 24px;">
+                        <h3>03. 실행 및 최적화 (Execution)</h3>
+                        <p>고품질 콘텐츠 제작, 내부 링크 구조 개선, 외부 권위 확보 작업을 진행합니다.</p>
+                    </div>
+                </div>
+                <div style="background: var(--gray-light); padding: 24px; border: 1px solid var(--gray-medium); display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <span style="font-size: 3rem; font-weight: 700; color: var(--accent);">100%</span>
+                        <p style="margin-top: 8px; font-weight: 600;">데이터 기반 의사결정</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 style="margin-bottom: 32px;">고객 성공 사례</h2>
+            <div class="grid-3">
+                <div class="review-card">
+                    <div class="review-header">
+                        <span>김민수 대표 | 핀테크 스타트업</span>
+                        <span>2023.10.15</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p style="margin-top: 12px; font-size: 0.9rem;">"여의도 검색 최적화 비용이 합리적인지 고민했는데, 실제로 3 달 만에 주요 키워드 1 페이지 진입에 성공했습니다. 리포트가 매우 상세하고 전문적입니다."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span>박지영 팀장 | 로펌 마케팅</span>
+                        <span>2023.11.02</span>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p style="margin-top: 12px; font-size: 0.9rem;">"법률 키워드는 경쟁이 치열한데, 롱테일 키워드 전략을 통해 질 좋은 트래픽을 유도받았습니다. ROI 가 명확하게 측정되어 만족스럽습니다."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span>이준호 상무 | 자산관리사</span>
+                        <span>2023.12.10</span>
+                    </div>
+                    <div class="stars">★★★★☆</div>
+                    <p style="margin-top: 12px; font-size: 0.9rem;">"기술적인 부분 (사이트 속도, 모바일 호환성) 개선을 통해 사용자 체류 시간이 크게 늘었습니다. 전문적인 조언에 감사드립니다."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <div>&copy; 2026 KR.GEEK. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h3 style="color: var(--secondary); margin-bottom: 16px;">SEO.YEIDO</h3>
+                    <p>여의도 검색 최적화 전문 에이전시</p>
+                    <p>서울특별시 영등포구 여의도동</p>
+                    <p>Tel: <a href="tel:01062790862">010-6279-0862</a></p>
+                </div>
+                <div style="text-align: right;">
+                    <p>&copy; 2024 Expert SEO Agency. All rights reserved.</p>
+                    <p style="font-size: 0.8rem; margin-top: 8px;">Domain: kr-pbn-bp-007 | Slug: kr-pbn-bp-007</p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
